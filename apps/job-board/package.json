@@ -1,0 +1,8 @@
+{
+  "name": "@next-js-learning/job-board",
+  "version": "0.0.1",
+  "private": true,
+  "nx": {
+    "name": "job-board"
+  }
+}

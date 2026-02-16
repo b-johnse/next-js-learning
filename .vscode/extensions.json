@@ -4,6 +4,12 @@
     "esbenp.prettier-vscode",
     "dbaeumer.vscode-eslint",
     "ms-playwright.playwright",
-    "firsttris.vscode-jest-runner"
+    "firsttris.vscode-jest-runner",
+    "aaron-bond.better-comments",
+    "streetsidesoftware.code-spell-checker",
+    "idbartosz.darkpp-italic",
+    "mhutchie.git-graph",
+    "pkief.material-icon-theme",
+    "bradlc.vscode-tailwindcss"
   ]
 }
