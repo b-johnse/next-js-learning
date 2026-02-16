@@ -1,10 +1,10 @@
 {
-  "name": "@next-js-learning/tutorial-dash-e2e",
+  "name": "tutorial-dash-e2e",
   "version": "0.0.1",
   "private": true,
   "nx": {
     "implicitDependencies": [
-      "@next-js-learning/tutorial-dash"
+      "tutorial-dash"
     ]
   }
 }

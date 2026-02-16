@@ -1,0 +1,138 @@
+{
+  // -------------
+  // Editor Basics
+  // -------------
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll": "explicit",
+    "source.organizeImports": "explicit"
+  },
+  "editor.fontLigatures": true,
+  "editor.lineHeight": 24,
+  "editor.bracketPairColorization.enabled": true,
+  "editor.guides.bracketPairs": "active",
+  "editor.linkedEditing": true,
+  "diffEditor.ignoreTrimWhitespace": false,
+  "explorer.decorations.badges": false,
+  // -----------------
+  // Files & Searching
+  // -----------------
+  "files.eol": "\n",
+  "files.trimTrailingWhitespace": true,
+  "files.watcherExclude": {
+    "**/node_modules/**": true,
+    "**/dist/**": true,
+    "**/build/**": true,
+    "**/.angular/cache/**": true,
+    "**/.turbo/**": true,
+    "**/.nx/**": true,
+    "**/coverage/**": true,
+    "**/storybook-static/**": true,
+    "**/tmp/**": true
+  },
+  "search.exclude": {
+    "**/node_modules": true,
+    "**/dist": true,
+    "**/build": true,
+    "**/.angular/cache": true,
+    "**/.turbo": true,
+    "**/.nx": true,
+    "**/coverage": true,
+    "**/storybook-static": true,
+    "**/tmp": true
+  },
+
+  // ---------------------
+  // Formatting & Linting
+  // ---------------------
+  "prettier.configPath": ".prettierrc",
+  "eslint.workingDirectories": [{ "mode": "auto" }],
+
+  // ---------------
+  // Language (Web)
+  // ---------------
+  "css.validate": false,
+  "scss.validate": false,
+  "less.validate": false,
+  "html.autoClosingTags": true,
+  "javascript.suggest.autoImports": true,
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "typescript.autoClosingTags": true,
+  "typescript.suggest.autoImports": true,
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "typescript.tsdk": "node_modules/typescript/lib",
+  "typescript.preferences.preferTypeOnlyAutoImports": true,
+  "typescript.tsserver.maxTsServerMemory": 4096,
+
+  // ---------------
+  // Angular / Nx
+  // ---------------
+  "angular.enable-strict-mode-prompt": false,
+  "nxConsole.generateAiAgentRules": true,
+
+  // -------------
+  // Git / SCM
+  // -------------
+  "git.autofetch": true,
+  "git.confirmSync": false,
+  "git.ignoreLimitWarning": true,
+  "git.replaceTagsWhenPull": true,
+  "gitlens.plusFeatures.enabled": false,
+
+  // ------------------
+  // NPM & Dependency
+  // ------------------
+  "npm.packageManager": "npm",
+  "npm.exclude": [
+    "**/dist/**",
+    "**/libs/**",
+    "**/.nx/**",
+    "**/.angular/**",
+    "**/.next/**"
+  ],
+  "npm.scriptExplorerExclude": ["install", "prepare", "changelog"],
+
+  // ---------
+  // Tooling
+  // ---------
+  "tailwindCSS.emmetCompletions": true,
+  "material-icon-theme.activeIconPack": "angular_ngrx",
+  "material-icon-theme.files.associations": {
+    "*.mock.ts": "test-jsx",
+    "*.store.ts": "ngrx-entity",
+    "test-setup.ts": "test-js",
+    "index.ts": "lib",
+    "*.gql.ts": "graphql",
+    "*.frag.ts": "graphql",
+    "*.model.ts": "typescript-def"
+  },
+
+  // --------------
+  // Workspace UI
+  // --------------
+  // Removed empty workbench.colorCustomizations
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.colorTheme": "Default Dark Modern",
+  "workbench.startupEditor": "none",
+
+  // ---------
+  // Workflows
+  // ---------
+  "github-actions.workflows.pinned.workflows": [".github/workflows/ci.yml"],
+
+  // ----------
+  // Spelling
+  // ----------
+  "cSpell.words": [],
+
+  // ------------------
+  // Language Overrides
+  // ------------------
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
+}
