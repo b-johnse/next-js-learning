@@ -8,10 +8,8 @@ const { composePlugins, withNx } = require('@nx/next');
 const nextConfig = {
   // Use this to set Nx-specific options
   // See: https://nx.dev/recipes/next/next-config-setup
+  cacheComponents: true,
   nx: {},
-  images: {
-    formats: ['image/avif', 'image/webp'],
-  },
 };
 
 const plugins = [

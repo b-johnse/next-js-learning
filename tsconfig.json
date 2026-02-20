@@ -4,13 +4,19 @@
   "files": [],
   "references": [
     {
-      "path": "./apps/tutorial-dash-e2e"
-    },
-    {
       "path": "./apps/tutorial-dash"
     },
     {
       "path": "./apps/job-board"
+    },
+    {
+      "path": "./apps/workout-planner"
+    },
+    {
+      "path": "./shadcn-ui"
+    },
+    {
+      "path": "./libs/shadcn"
     }
   ]
 }

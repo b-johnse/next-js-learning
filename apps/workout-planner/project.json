@@ -1,0 +1,9 @@
+{
+  "name": "workout-planner",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/workout-planner",
+  "projectType": "application",
+  "tags": [],
+  "// targets": "to see all targets run: nx show project workout-planner --web",
+  "targets": {}
+}
