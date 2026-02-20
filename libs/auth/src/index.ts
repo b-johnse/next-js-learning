@@ -1,1 +1,1 @@
-export { auth, getSession } from './lib/auth';
+export { auth, authConfig, getSession } from './lib/auth';

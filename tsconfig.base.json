@@ -24,7 +24,9 @@
       "@local/shadcnui/*": ["libs/shadcn/src/*"],
       "@local/auth": ["libs/auth/src/index.ts"],
       "@local/auth/client": ["libs/auth/src/client.ts"],
-      "@local/auth/*": ["libs/auth/src/*"]
+      "@local/auth/*": ["libs/auth/src/*"],
+      "@local/db": ["libs/db/src/index.ts"],
+      "@local/db/*": ["libs/db/src/*"]
     }
   }
 }
