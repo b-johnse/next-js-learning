@@ -47,3 +47,5 @@ out
 
 test-output
 apps/tutorial-dash/.env.local
+**/.env.local
+**/.env
