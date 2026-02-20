@@ -1,4 +1,5 @@
 import nx from '@nx/eslint-plugin';
+import eslintPluginJest from 'eslint-plugin-jest';
 import tailwind from 'eslint-plugin-tailwindcss';
 
 export default [
@@ -8,18 +9,9 @@ export default [
   {
     ignores: ['**/dist', '**/out-tsc', '**/test-output'],
   },
-  { 
-    plugins: {
-      tailwindcss: tailwind,
-    },
+  {
     files: ['**/*.ts', '**/*.tsx', '**/*.js', '**/*.jsx'],
     rules: {
-      'tailwindcss/classnames-order': 'off',
-      'tailwindcss/enforces-negative-arbitrary-values': 'error',
-      'tailwindcss/enforces-shorthand': 'error',
-      'tailwindcss/no-unnecessary-arbitrary-value': 'error',
-      'tailwindcss/no-custom-classname': 'off',
-      'tailwindcss/migration-from-tailwind-2': 'error',
       '@nx/enforce-module-boundaries': [
         'error',
         {
@@ -30,6 +22,39 @@ export default [
               sourceTag: '*',
               onlyDependOnLibsWithTags: ['*'],
             },
+          ],
+        },
+      ],
+    },
+  },
+  // Tailwind rules for story files (.stories.ts only) to catch class issues outside templates.
+  {
+    plugins: { tailwindcss: tailwind },
+    files: ['**/*.tsx', '**/*.html'],
+    rules: {
+      'tailwindcss/classnames-order': 'off',
+      'tailwindcss/enforces-negative-arbitrary-values': 'error',
+      'tailwindcss/enforces-shorthand': 'error',
+      'tailwindcss/no-unnecessary-arbitrary-value': 'error',
+      'tailwindcss/no-custom-classname': 'off',
+      'tailwindcss/migration-from-tailwind-2': 'error',
+    },
+  },
+  {
+    plugins: {
+      jest: eslintPluginJest,
+    },
+    files: ['**/*.spec.ts'],
+    rules: {
+      '@typescript-eslint/no-explicit-any': 'off',
+      'jest/expect-expect': [
+        'error',
+        {
+          assertFunctionNames: [
+            'expect',
+            '*.expectOne',
+            'expectObservable',
+            'verifyHttpRequest',
           ],
         },
       ],

@@ -78,5 +78,8 @@
         "unitTestRunner": "jest"
       }
     }
+  },
+  "sync": {
+    "applyChanges": true
   }
 }
