@@ -1,0 +1,3 @@
+// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
+
+exports[`LoginForm renders the login form layout correctly against its snapshot 1`] = `null`;
