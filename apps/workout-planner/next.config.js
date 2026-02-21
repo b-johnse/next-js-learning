@@ -10,6 +10,7 @@ const nextConfig = {
   // See: https://nx.dev/recipes/next/next-config-setup
   cacheComponents: true,
   nx: {},
+  transpilePackages: ['@local/auth', '@local/db', '@local/shadcnui'],
 };
 
 const plugins = [

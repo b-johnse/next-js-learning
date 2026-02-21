@@ -114,6 +114,6 @@
   },
   "workspaces": [
     "apps/*",
-    "libs/db"
+    "libs/*"
   ]
 }
