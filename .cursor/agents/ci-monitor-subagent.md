@@ -1,5 +1,7 @@
 ---
+name: ci-monitor-subagent
 description: Polls Nx Cloud CI pipeline and self-healing status. Returns structured state when actionable. Spawned by /monitor-ci command to monitor CI Attempt status.
+model: fast
 ---
 
 # CI Monitor Subagent

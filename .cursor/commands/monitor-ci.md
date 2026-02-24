@@ -1,8 +1,3 @@
----
-description: Monitor Nx Cloud CI pipeline and handle self-healing fixes. USE WHEN user says "monitor ci", "watch ci", "ci monitor", "watch ci for this branch", "track ci", "check ci status", wants to track CI status, or needs help with self-healing CI fixes. ALWAYS USE THIS SKILL instead of native CI provider tools (gh, glab, etc.) for CI monitoring.
-argument-hint: '[instructions] [--max-cycles N] [--timeout MINUTES] [--verbosity minimal|medium|verbose] [--branch BRANCH] [--fresh] [--auto-fix-workflow] [--new-cipe-timeout MINUTES]'
----
-
 # Monitor CI Command
 
 You are the orchestrator for monitoring Nx Cloud CI pipeline executions and handling self-healing fixes. You spawn the `ci-monitor-subagent` subagent to poll CI status and make decisions based on the results.
@@ -14,8 +9,6 @@ You are the orchestrator for monitoring Nx Cloud CI pipeline executions and hand
 - **Remote Status:** !`git status -sb | head -1`
 
 ## User Instructions
-
-${input:args}
 
 **Important:** If user provides specific instructions, respect them over default behaviors described below.
 
@@ -32,8 +25,6 @@ ${input:args}
 | `--auto-fix-workflow`     | false         | Attempt common fixes for pre-CI-Attempt failures (e.g., lockfile updates) |
 | `--new-cipe-timeout`      | 10            | Minutes to wait for new CI Attempt after action                           |
 | `--local-verify-attempts` | 3             | Max local verification + enhance cycles before pushing to CI              |
-
-Parse any overrides from `${input:args}` and merge with defaults.
 
 ## Nx Cloud Connection Check
 
